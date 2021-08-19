@@ -22,3 +22,8 @@ function* primeNumbersGenerator() {
     i++;
   }
 }
+
+// testing the `primeNumbersGenerator` generator function
+const [p1, p2, p3] = primeNumbersGenerator();
+console.log([p1, p2, p3]);
+// expected [2, 3, 5]
