@@ -78,3 +78,11 @@ function makePrimeTable(N) {
     rowOutput = ''; // cleaning the variable so we can re-use it
   }
 }
+
+// ----------- some in-between TESTING
+makePrimeTable(3);
+// expected:   
+//   | 2 | 3 | 5 | 
+// 2 | 4 | 6 | 10 | 
+// 3 | 6 | 9 | 15 |
+// 5 | 10 | 15 | 25 |
