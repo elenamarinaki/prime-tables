@@ -6,6 +6,19 @@ function equal(actual, expected) {
   }
 }
 
+function equalArrays(actual, expected) {
+  actual.forEach((a) => {
+    expected.forEach((e) => {
+      if (a !== e) {
+        console.error(
+          `Fail: Expected ${expected} but received ${actual} instead`
+        );
+      }
+    });
+  });
+  console.info(`Pass: Expected ${expected} and received ${actual}`);
+}
+
 function notEqual(actual, expected) {
   if (actual !== expected) {
     console.info(`Pass: ${expected} is different to ${actual}`);
