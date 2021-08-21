@@ -38,3 +38,6 @@ The application was built in the following stages:
   - The main decision I have to make for this stage is if I would just create an element and output the console result as a text, **or** something more visually pleasing, such as presenting the results in an actual table, using the `<table>`. 🧰
   - My first approach was to create the `makePrimeTableHTML()` function (commented out in the _script.js_). This was a slightly modified version of `makePrimeTable()`, that was just presenting the console formatted result in an HTML page. The presentation was not very efficient this way, as a layout problem was created through the use of `white-space: pre;` in the CSS. The `white-space: pre;` was necessary to parse the `new line` character through the `.textContent` method in js.
   - My second - and final - approach was the function `primeTable()`. ✨ Its task is the same as in the case of `makePrimeTable()` and `makePrimeTableHTML()`, but this time the DOM is being manipulated. I create a `TABLE` according to the given `N` number, in which I present the results. This function is called by the `createTable()` function, which is triggered once the input number is submitted through the `form`.
+
+## Coming soon ...
+### TESTING 🧪
