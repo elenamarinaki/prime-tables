@@ -1,6 +1,6 @@
 # Prime Tables 🧩
 
-2️⃣ 3️⃣ 5️⃣ 7️⃣ 1️⃣1️⃣ 1️⃣3️⃣ 1️⃣7️⃣ 1️⃣9️⃣ 2️⃣3️⃣ 🔮
+2️⃣  3️⃣  5️⃣  7️⃣  1️⃣1️⃣  1️⃣3️⃣  1️⃣7️⃣  1️⃣9️⃣  2️⃣3️⃣   🔮
 
 This application takes numeric input (N) from a user and outputs a multiplication table of (N) prime numbers.
 Programming used for the project: `JavaScript`
