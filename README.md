@@ -1,5 +1,7 @@
 # Prime Tables 🧩
 
+2️⃣ 3️⃣ 5️⃣ 7️⃣ 1️⃣1️⃣ 1️⃣3️⃣ 1️⃣7️⃣ 1️⃣9️⃣ 2️⃣3️⃣ 🔮
+
 This application takes numeric input (N) from a user and outputs a multiplication table of (N) prime numbers.
 Programming used for the project: `JavaScript`
 
@@ -40,4 +42,5 @@ The application was built in the following stages:
   - My second - and final - approach was the function `primeTable()`. ✨ Its task is the same as in the case of `makePrimeTable()` and `makePrimeTableHTML()`, but this time the DOM is being manipulated. I create a `TABLE` according to the given `N` number, in which I present the results. This function is called by the `createTable()` function, which is triggered once the input number is submitted through the `form`.
 
 ## Coming soon ...
+
 ### TESTING 🧪
