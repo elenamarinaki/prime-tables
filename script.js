@@ -124,6 +124,7 @@ function primeTable(N) {
 const form = document.querySelector('form');
 const numberInput = document.querySelector('#key-number');
 const tableN = document.querySelector('#table-N');
+const warning = document.querySelector('#warning');
 
 function init() {
   numberInput.value = '';
@@ -133,7 +134,13 @@ function createTable(e) {
   e.preventDefault();
   let input = numberInput.value;
   let number = parseInt(input);
-  primeTable(number);
+
+  if (isNaN(number) || number < 1) {
+    warning.textContent = 'Please enter a number > 1!';
+  } else {
+    primeTable(number);
+    warning.textContent = '';
+  }
   // console.log(number);
 }
 
