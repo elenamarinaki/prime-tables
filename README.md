@@ -43,5 +43,5 @@ The application was built in the following stages:
 
 ## TESTING 🧪
 
-- For the testing, I created a _test-helpers.js_ which has a couple of functions that test regular equality or equality between two arrays, since those are reference objects. It also includes the the declaration of the test function itself.
-- In the files *test.js* I am testing the functions of the file *script.js* for various inputs, trying to make the test functions pass and fail.
+- For the testing, I created a _test-helpers.js_ which has a couple of functions that test regular equality or equality between two arrays, since those are reference objects. It also includes the the declaration of the test function itself. ⚖️
+- In the files _test.js_ I am testing the functions of the file _script.js_ for various inputs, trying to make the test functions pass and fail. 🗝
