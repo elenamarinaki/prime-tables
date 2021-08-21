@@ -136,7 +136,7 @@ function createTable(e) {
   let number = parseInt(input);
 
   if (isNaN(number) || number < 1) {
-    warning.textContent = 'Please enter a number > 1!';
+    warning.textContent = '*** Please enter a number > 1! ***';
   } else {
     primeTable(number);
     warning.textContent = '';
