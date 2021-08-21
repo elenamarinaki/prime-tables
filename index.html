@@ -23,6 +23,7 @@
     </header>
 
     <main class="center stack-md">
+      <!-- --------------------- SUB-HEADER -->
       <section>
         <div id="sub-header" class="stack-sm">
           Give a number... and watch it create a multiplication table of prime
@@ -35,6 +36,25 @@
           </div>
         </div>
       </section>
+      <!-- --------------------- USER INPUT -> N -->
+      <section>
+        <form class="stack-md">
+          <div>
+            <input
+              type="text"
+              id="key-number"
+              name="key-number"
+              placeholder="Give a number #️⃣ "
+            />
+          </div>
+          <div class="center width-sm search-label">
+            <label for="key-number"></label>
+          </div>
+          <!-- <button type="submit">Search</button> -->
+        </form>
+      </section>
+
+      <!-- --------------------- TABLE CREATION - ATTACHMENT POINT -->
       <section>
         <div id="table"></div>
       </section>

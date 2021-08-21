@@ -94,7 +94,7 @@ makePrimeTable(3);
 // -------------------------------------------------------
 const primesTable = document.querySelector('#table');
 
-// ---------------------------------------- TABLE SOLUTION?
+// ---------------------------------------- TABLE SOLUTION
 function primeTable(N) {
   const primesArray = giveNPrimeNumbers(N);
   const table = document.createElement('table');
@@ -114,8 +114,26 @@ function primeTable(N) {
   primesTable.appendChild(table);
   document.querySelector('table').rows[0].cells[0].innerText = ' ';
 }
-primeTable(11);
+// primeTable(9);
 
+// ---------------------------------------- IMPLEMENTING USER INPUT
+const form = document.querySelector('form');
+const numberInput = document.querySelector('#key-number');
+
+function init() {
+  numberInput.value = '';
+}
+
+function createTable(e) {
+  e.preventDefault();
+  let input = numberInput.value;
+  let number = parseInt(input);
+  primeTable(number);
+  // console.log(number);
+}
+
+window.addEventListener('load', init);
+form.addEventListener('submit', createTable);
 // **************************************************************************
 // THIS SOLUTION IS NOT USED - I CREATED IT JUST FOR TRIAL & TESTING PURPOSES
 // **************************************************************************
