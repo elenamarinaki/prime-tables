@@ -31,7 +31,9 @@ console.log([p1, p2, p3]);
 // -----------
 
 function giveNPrimeNumbers(N) {
-  let primesArr = [' '];
+  // let primesArr = [' '];
+  let primesArr = [1];
+
   let isPrime;
 
   // we use the generator function to yield N number of primes
@@ -88,33 +90,80 @@ makePrimeTable(3);
 // 5 | 10 | 15 | 25 |
 
 // ------------------------------ DOM MANIPULATION
-const primesTable = document.querySelector('#table');
+// -------------------------------------------------------
+// -------------------------------------------------------
 
-function makePrimeTableHTML(N) {
+// ---------------------------------------- TABLE SOLUTION?
+function primeTable(N) {
   const primesArray = giveNPrimeNumbers(N);
-  // using a string variable which we are going to reuse every time we produce a new row of the table
-  let rowOutput = '';
+  const table = document.createElement('table');
 
-  // output the first row of primes - the original primes array
-  primesArray.forEach((p) => (rowOutput += `${p} | `));
-  console.log(rowOutput);
-  primesTable.textContent += `${rowOutput} \r\n`;
-  rowOutput = ''; // cleaning the variable so we can re-use it
+  for (let i = 0; i < primesArray.length; i++) {
+    let tr = document.createElement('tr'); // create row
 
-  // staring from the second element of the array - index = 1
-  for (let i = 1; i < primesArray.length; i++) {
-    // output the original element of the primes array vertically
-    rowOutput += `${primesArray[i]} | `;
-    // multiplying each subsequent element with all the primes of the original primes array
-    for (let j = 1; j < primesArray.length; j++) {
-      rowOutput += `${primesArray[i] * primesArray[j]} | `;
+    for (let j = 0; j < primesArray.length; j++) {
+      let td = document.createElement('td');
+      let prime = document.createTextNode(primesArray[i] * primesArray[j]);
+      td.appendChild(prime);
+      tr.appendChild(td);
     }
-    // output the new row
-    console.log(rowOutput);
-    primesTable.textContent += `${rowOutput} \r\n`;
 
-    rowOutput = ''; // cleaning the variable so we can re-use it
+    table.appendChild(tr);
   }
+  document.body.appendChild(table);
 }
+primeTable(17);
 
-makePrimeTableHTML(3);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// **************************************************************************
+// THIS SOLUTION IS NOT USED - I CREATED IT JUST FOR TRIAL & TESTING PURPOSES
+// **************************************************************************
+
+// const primesTable = document.querySelector('#table');
+
+// function makePrimeTableHTML(N) {
+//   const primesArray = giveNPrimeNumbers(N);
+//   // using a string variable which we are going to reuse every time we produce a new row of the table
+//   let rowOutput = '';
+
+//   // output the first row of primes - the original primes array
+//   primesArray.forEach((p) => (rowOutput += `${p} | `));
+//   console.log(rowOutput);
+//   primesTable.textContent += `${rowOutput} \r\n`;
+//   rowOutput = ''; // cleaning the variable so we can re-use it
+
+//   // staring from the second element of the array - index = 1
+//   for (let i = 1; i < primesArray.length; i++) {
+//     // output the original element of the primes array vertically
+//     rowOutput += `${primesArray[i]} | `;
+//     // multiplying each subsequent element with all the primes of the original primes array
+//     for (let j = 1; j < primesArray.length; j++) {
+//       rowOutput += `${primesArray[i] * primesArray[j]} | `;
+//     }
+//     // output the new row
+//     console.log(rowOutput);
+//     primesTable.textContent += `${rowOutput} \r\n`;
+
+//     rowOutput = ''; // cleaning the variable so we can re-use it
+//   }
+// }
+
+// makePrimeTableHTML(3);
+// **************************************************************************
+// **************************************************************************
+// **************************************************************************
+// **************************************************************************
