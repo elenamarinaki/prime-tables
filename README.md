@@ -1,6 +1,6 @@
 # Prime Tables 🧩
 
-2️⃣  3️⃣  5️⃣  7️⃣  1️⃣1️⃣  1️⃣3️⃣  1️⃣7️⃣  1️⃣9️⃣  2️⃣3️⃣   🔮
+2️⃣ 3️⃣ 5️⃣ 7️⃣ 1️⃣1️⃣ 1️⃣3️⃣ 1️⃣7️⃣ 1️⃣9️⃣ 2️⃣3️⃣ 🔮
 
 This application takes numeric input (N) from a user and outputs a multiplication table of (N) prime numbers.
 Programming used for the project: `JavaScript`
@@ -41,6 +41,7 @@ The application was built in the following stages:
   - My first approach was to create the `makePrimeTableHTML()` function (commented out in the _script.js_). This was a slightly modified version of `makePrimeTable()`, that was just presenting the console formatted result in an HTML page. The presentation was not very efficient this way, as a layout problem was created through the use of `white-space: pre;` in the CSS. The `white-space: pre;` was necessary to parse the `new line` character through the `.textContent` method in js.
   - My second - and final - approach was the function `primeTable()`. ✨ Its task is the same as in the case of `makePrimeTable()` and `makePrimeTableHTML()`, but this time the DOM is being manipulated. I create a `TABLE` according to the given `N` number, in which I present the results. This function is called by the `createTable()` function, which is triggered once the input number is submitted through the `form`.
 
-## Coming soon ...
+## TESTING 🧪
 
-### TESTING 🧪
+- For the testing, I created a _test-helpers.js_ which has a couple of functions that test regular equality or equality between two arrays, since those are reference objects. It also includes the the declaration of the test function itself.
+- In the files *test.js* I am testing the functions of the file *script.js* for various inputs, trying to make the test functions pass and fail.
