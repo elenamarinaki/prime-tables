@@ -28,7 +28,9 @@ The application was built in the following stages:
     5 | 10 | 15 | 25 |<br />
 
   - Screenshots for other inputs 🧮
+
     <img src="app-screenshots/screen_1.png" width="200"/>
+    
     <img src="app-screenshots/screen_2.png" width="250"/>
 
 - APPLICATION stage 🟪 🟧 🟨
