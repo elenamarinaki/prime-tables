@@ -7,16 +7,20 @@ function equal(actual, expected) {
 }
 
 function equalArrays(actual, expected) {
-  actual.forEach((a) => {
-    expected.forEach((e) => {
-      if (a !== e) {
-        console.error(
-          `Fail: Expected ${expected} but received ${actual} instead`
-        );
-      }
+  if (actual.length !== expected.length) {
+    console.error(`Fail: Expected ${expected} but received ${actual} instead`);
+  } else {
+    actual.forEach((a) => {
+      expected.forEach((e) => {
+        if (a !== e) {
+          console.error(
+            `Fail: Expected ${expected} but received ${actual} instead`
+          );
+        }
+      });
     });
-  });
-  console.info(`Pass: Expected ${expected} and received ${actual}`);
+    console.info(`Pass: Expected ${expected} and received ${actual}`);
+  }
 }
 
 function notEqual(actual, expected) {
