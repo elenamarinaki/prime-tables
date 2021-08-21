@@ -8,5 +8,5 @@ Programming used for the project: `JavaScript`
 The user gives a number in the input field and presses `Enter`. The application outputs a **(N+1) x (N+1) grid of numbers**.
 
 
-<img src="app-screenshots/screen_3" width="150"/>
-<img src="app-screenshots/screen_4" width="150"/>
+<img src="app-screenshots/screen_3.png" width="150"/>
+<img src="app-screenshots/screen_4.png" width="150"/>
