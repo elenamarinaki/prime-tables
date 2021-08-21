@@ -19,7 +19,7 @@ The application was built in the following stages:
 - CONSOLE stage 🖥
   - I first created a prime numbers generator function `primeNumbersGenerator()`. This is an iterable entity that outputs prime numbers. It checks if an integer is divisible by 1 or itself, and registers it as **prime** with `yield`.
   - The next function `giveNPrimeNumbers()` iterates the generator with upper limit an input `N`, that is the argument of the function itself. It returns an array `primesArr` with the first `N` primes, plus an extra empty slot at the beginning. 
-  - I first devised the `makePrimeTable()` function, to output the table on the console. The formatting is achieved through a *string variable* `rowOutput` that serves as each row of the array. The first row is populated with the original output of primes from the `giveNPrimeNumbers()`, separated by the `|` character. Each subsequent row is populated with the multipliers of each one of the same prime numbers with every other one in the array.
+  - I devised the `makePrimeTable()` function, to output the table on the console. The formatting is achieved through a *string variable* `rowOutput` that serves as each row of the array. The first row is populated with the original output of primes from the `giveNPrimeNumbers()`, separated by the `|` character. Each subsequent row is populated with the multipliers of each one of the same prime numbers with every other one in the array.
   - The result for an input N = 3 is:<br />
         | 2 | 3 | 5 |<br />
       2 | 4 | 6 | 10 |<br />
@@ -28,5 +28,5 @@ The application was built in the following stages:
 
   - Screenshots for other inputs 🧮
 <img src="app-screenshots/screen_1.png" width="200"/>
-<img src="app-screenshots/screen_2.png" width="200"/>
+<img src="app-screenshots/screen_2.png" width="250"/>
 
