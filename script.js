@@ -111,6 +111,10 @@ function primeTable(N) {
 
     table.appendChild(tr);
   }
+  const tableN = document.createElement('div');
+  tableN.textContent = `N = ${N}`;
+
+  primesTable.appendChild(tableN);
   primesTable.appendChild(table);
   document.querySelector('table').rows[0].cells[0].innerText = ' ';
 }
@@ -119,6 +123,7 @@ function primeTable(N) {
 // ---------------------------------------- IMPLEMENTING USER INPUT
 const form = document.querySelector('form');
 const numberInput = document.querySelector('#key-number');
+const tableN = document.querySelector('#table-N');
 
 function init() {
   numberInput.value = '';
