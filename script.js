@@ -92,6 +92,7 @@ makePrimeTable(3);
 // ------------------------------ DOM MANIPULATION
 // -------------------------------------------------------
 // -------------------------------------------------------
+const primesTable = document.querySelector('#table');
 
 // ---------------------------------------- TABLE SOLUTION?
 function primeTable(N) {
@@ -110,10 +111,10 @@ function primeTable(N) {
 
     table.appendChild(tr);
   }
-  document.body.appendChild(table);
+  primesTable.appendChild(table);
   document.querySelector('table').rows[0].cells[0].innerText = ' ';
 }
-primeTable(17);
+primeTable(11);
 
 // **************************************************************************
 // THIS SOLUTION IS NOT USED - I CREATED IT JUST FOR TRIAL & TESTING PURPOSES
