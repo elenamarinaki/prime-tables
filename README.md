@@ -44,6 +44,7 @@ The application was built in the following stages:
 ## TESTING 🧪
 
 - Many bugs were corrected during the implementation process, either by being obvious, or by using a `console.log()` wherever appropriate.
-  - One of these instances was what would happen given any other input, except for a positive integer greater than 1. 
+  - One of these instances was what would happen given any other input, except for a positive integer greater than 1. In that case, the primes generator function `primeNumbersGenerator()` would run theoretically forever, causing the page to stop working.
+  - **SOLUTION**:  
 - For the testing, I created a _test-helpers.js_ which has a couple of functions that test regular equality or equality between two arrays, since those are reference objects. It also includes the the declaration of the test function itself. ⚖️
 - In the files _test.js_ I am testing the functions of the file _script.js_ for various inputs, trying to make the test functions pass and fail. 🗝
