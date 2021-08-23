@@ -111,6 +111,9 @@ function primeTable(N) {
 
     table.appendChild(tr);
   }
+  if (document.querySelector('#table') !== null) {
+    primesTable.textContent = '';
+  }
   const tableN = document.createElement('div');
   tableN.textContent = `N = ${N}`;
 
